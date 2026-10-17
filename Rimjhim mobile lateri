@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Rimjhim Enterprises, Lateri, Vidisha, Madhya Pradesh — mobiles, refrigerators, washing machines, TVs, ACs, earbuds and home appliances.">
+<meta name="keywords" content="Rimjhim Enterprises, Lateri, Vidisha, mobile shop, refrigerator, washing machine, electronics shop">
+<meta name="theme-color" content="#0b2138">
+<title>Rimjhim Enterprises | Electronics & Home Appliances</title>
+<style>
+:root{--bg:#f8fbff;--nav:#08203a;--accent:#0b63d5;--panel:#ffffff;--muted:#5b6b7a;--text:#0b2138;--line:rgba(11,33,56,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter, system-ui, -apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px}
+.topline{background:linear-gradient(90deg,var(--accent),#063a6b);color:white;padding:8px 0;font-size:14px;text-align:center}
+header.navbar{background:var(--nav);color:white}
+.navinner{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px}
+.brand{display:flex;gap:10px;align-items:center;text-decoration:none;color:white}
+.logo{height:46px;width:46px;border-radius:8px;background:linear-gradient(180deg,#0b63d5 0%,#063a6b 100%);display:flex;align-items:center;justify-content:center;font-weight:700;color:white}
+.navlinks{display:flex;gap:12px;margin-left:12px}
+.navlinks a{color:rgba(255,255,255,.95);text-decoration:none;font-weight:600}
+.navbtn{background:var(--accent);color:white;padding:8px 12px;border-radius:8px;text-decoration:none}
+.hero{padding:32px 0;display:grid;grid-template-columns:1fr 360px;gap:22px;align-items:center}
+.eyebrow{display:inline-block;background:#e8f2ff;color:var(--accent);padding:6px 10px;border-radius:999px;font-weight:700;margin-bottom:12px}
+.hero h1{margin:0;font-size:28px}
+.hero p{color:var(--muted);margin-top:10px}
+.btn{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;margin-right:8px}
+.btn-primary{background:var(--accent);color:white}
+.btn-outline{background:white;border:1px solid var(--line);color:var(--text)}
+.hero-photo img{width:100%;height:auto;border-radius:12px;box-shadow:0 6px 24px rgba(11,33,56,.08)}
+.section{padding:28px 0}
+.section-head{margin-bottom:18px}
+.kicker{color:var(--accent);font-weight:700}
+.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.product{background:var(--panel);padding:12px;border-radius:10px;box-shadow:0 6px 18px rgba(11,33,56,.04);text-align:center}
+.product img{width:100%;height:140px;object-fit:cover;border-radius:8px}
+.notice{color:var(--muted);font-size:13px;margin-top:12px}
+.section-alt{background:#f1f7ff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.contact-card{background:var(--panel);padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(11,33,56,.04)}
+.contact-item{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px}
+.contact-icon{font-size:20px}
+.mapbox{background:linear-gradient(180deg,#eaf4ff,#fff);padding:12px;border-radius:10px;text-align:center}
+.footer{padding:18px 0;background:linear-gradient(180deg,#021322,#04203a);color:white}
+.footer-inner{display:flex;gap:12px;align-items:center;justify-content:space-between}
+.float-wa{position:fixed;right:16px;bottom:18px;background:#25d366;color:white;width:56px;height:56px;border-radius:999px;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:20px}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,minmax(0,1fr))}.navlinks{display:none}}
+@media(max-width:560px){.products{grid-template-columns:1fr}.footer-inner{flex-direction:column;gap:8px}}
+</style>
+</head>
+<body>
+<div class="topline"><div class="wrap">📍 Lateri, District Vidisha, Madhya Pradesh • Quality electronics & home appliances</div></div>
+<header class="navbar"><div class="wrap navinner">
+<a class="brand" href="#home"><div class="logo">RE</div><div><div style="font-weight:700">RIMJHIM ENTERPRISES</div><div style="font-size:12px;color:rgba(255,255,255,.85)">Smart choices. Happy homes.</div></div></a>
+<nav class="navlinks" aria-label="Main navigation"><a href="#home">Home</a><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+<a class="navbtn" href="#products">Explore Deals</a>
+</div></header>
+<main>
+<section class="hero wrap" id="home">
+<div>
+<span class="eyebrow">🎉 FESTIVE SHOPPING • LATERI</span>
+<h1>Upgrade your home with reliable electronics</h1>
+<p>Visit Rimjhim Enterprises in Lateri, Vidisha for mobiles, TVs, refrigerators, washing machines, air conditioners and audio products. Contact us to check availability or to request product photos.</p>
+<div style="margin-top:14px"><a class="btn btn-primary" href="#products">Browse products</a><a class="btn btn-outline" href="#contact">Find our shop</a></div>
+</div>
+<div class="hero-photo"><img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1200&q=85" alt="Store products and home appliances"></div>
+</section>
+
+<section class="section wrap" id="products">
+<div class="section-head"><span class="kicker">Shop by category</span><h2>Find your next favourite</h2><p class="notice">Product photos are illustrative. Confirm model, stock and price with the shop.</p></div>
+<div class="products" id="productGrid">
+<div class="product" data-category="mobile"><img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80" alt="Mobiles"><h3>Mobile Phones</h3></div>
+<div class="product" data-category="audio"><img src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=800&q=80" alt="Earbuds"><h3>Earphones</h3></div>
+<div class="product" data-category="audio"><img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=800&q=80" alt="Speakers"><h3>Speakers</h3></div>
+<div class="product" data-category="tv"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=800&q=80" alt="TV"><h3>Televisions</h3></div>
+<div class="product" data-category="cooling"><img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?auto=format&fit=crop&w=800&q=80" alt="Fridge"><h3>Refrigerators</h3></div>
+<div class="product" data-category="cooling"><img src="https://images.unsplash.com/photo-1631545806609-4b6c9f6a3c6b?auto=format&fit=crop&w=800&q=80" alt="AC"><h3>Air Conditioners</h3></div>
+<div class="product" data-category="laundry"><img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=800&q=80" alt="Washing Machine"><h3>Washing Machines</h3></div>
+</div>
+</section>
+
+<section class="section section-alt wrap" id="about">
+<div class="section-head"><span class="kicker">About</span><h2>Friendly local electronics store in Lateri</h2><p>Rimjhim Enterprises has a wide selection of everyday electronics and reliable after-sales support. We focus on helping customers pick the right product for their needs.</p></div>
+</section>
+
+<section class="section wrap" id="contact">
+<div class="section-head"><span class="kicker">Get in touch</span><h2>Visit our shop</h2><p class="notice">Need a specific model? Send an enquiry or visit the shop in Lateri to see products in person.</p></div>
+<div style="display:grid;grid-template-columns:1fr 320px;gap:16px;align-items:start">
+<div>
+<div class="contact-card">
+<h3>📍 Shop Information</h3>
+<div class="contact-item"><div class="contact-icon">🏬</div><div><strong>Rimjhim Enterprises</strong><div style="font-size:13px;color:var(--muted)">Electronics & Home Appliances</div></div></div>
+<div class="contact-item"><div class="contact-icon">📍</div><div><div style="font-weight:700">Lateri, District Vidisha</div><div style="font-size:13px;color:var(--muted)">Madhya Pradesh, India</div></div></div>
+<div class="contact-item"><div class="contact-icon">📸</div><div><div style="font-weight:700">Instagram</div><div style="font-size:13px;color:var(--muted)">Rimjhim mobile lateri</div></div></div>
+<div class="contact-item"><div class="contact-icon">⏰</div><div><div style="font-weight:700">Opening hours</div><div style="font-size:13px;color:var(--muted)">Placeholder — please provide opening hours</div></div></div>
+<div style="margin-top:10px"><a class="btn btn-primary" href="#contact">Enquire about a product</a> <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=Rimjhim+Enterprises+Lateri+Vidisha" target="_blank">Find on map</a></div>
+</div>
+</div>
+<div>
+<div class="mapbox">
+<div style="font-size:28px">📍</div>
+<h3>Rimjhim Enterprises</h3>
+<p style="color:var(--muted)">Lateri, District Vidisha, Madhya Pradesh</p>
+<a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=Rimjhim+Enterprises+Lateri+Vidisha" target="_blank">Open Google Maps</a>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+<div class="wrap footer-inner">
+<div>
+<strong>RIMJHIM ENTERPRISES</strong><br><small style="color:rgba(255,255,255,.85)">Smart choices. Happy homes.</small>
+</div>
+<div style="color:rgba(255,255,255,.9)">Lateri, Vidisha, Madhya Pradesh</div>
+<div style="text-align:right">
+<div style="font-size:13px">Instagram: Rimjhim mobile lateri</div>
+<div style="font-size:12px;color:rgba(255,255,255,.7);margin-top:6px">© <span id="year"></span> Rimjhim Enterprises</div>
+</div>
+</div>
+</footer>
+
+<a class="float-wa" href="#contact" aria-label="Go to contact" title="Contact the shop">✉</a>
+
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
