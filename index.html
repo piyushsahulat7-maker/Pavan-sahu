@@ -1,127 +1,550 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Rimjhim Enterprises, Lateri, Vidisha, Madhya Pradesh — mobiles, refrigerators, washing machines, TVs, ACs, earbuds and home appliances.">
-<meta name="keywords" content="Rimjhim Enterprises, Lateri, Vidisha, mobile shop, refrigerator, washing machine, electronics shop">
-<meta name="theme-color" content="#0b2138">
-<title>Rimjhim Enterprises | Electronics & Home Appliances</title>
+
+<meta name="description" content="Rimjhim Enterprises, Main Market Lateri, Vidisha. Mobile phones, refrigerators, washing machines, TVs, ACs, earbuds and home appliances.">
+<meta name="theme-color" content="#19072e">
+
+<title>Rimjhim Enterprises | Main Market Lateri</title>
+
 <style>
-:root{--bg:#f8fbff;--nav:#08203a;--accent:#0b63d5;--panel:#ffffff;--muted:#5b6b7a;--text:#0b2138;--line:rgba(11,33,56,.08)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter, system-ui, -apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5}
-.wrap{max-width:980px;margin:0 auto;padding:0 16px}
-.topline{background:linear-gradient(90deg,var(--accent),#063a6b);color:white;padding:8px 0;font-size:14px;text-align:center}
-header.navbar{background:var(--nav);color:white}
-.navinner{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px}
-.brand{display:flex;gap:10px;align-items:center;text-decoration:none;color:white}
-.logo{height:46px;width:46px;border-radius:8px;background:linear-gradient(180deg,#0b63d5 0%,#063a6b 100%);display:flex;align-items:center;justify-content:center;font-weight:700;color:white}
-.navlinks{display:flex;gap:12px;margin-left:12px}
-.navlinks a{color:rgba(255,255,255,.95);text-decoration:none;font-weight:600}
-.navbtn{background:var(--accent);color:white;padding:8px 12px;border-radius:8px;text-decoration:none}
-.hero{padding:32px 0;display:grid;grid-template-columns:1fr 360px;gap:22px;align-items:center}
-.eyebrow{display:inline-block;background:#e8f2ff;color:var(--accent);padding:6px 10px;border-radius:999px;font-weight:700;margin-bottom:12px}
-.hero h1{margin:0;font-size:28px}
-.hero p{color:var(--muted);margin-top:10px}
-.btn{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;margin-right:8px}
-.btn-primary{background:var(--accent);color:white}
-.btn-outline{background:white;border:1px solid var(--line);color:var(--text)}
-.hero-photo img{width:100%;height:auto;border-radius:12px;box-shadow:0 6px 24px rgba(11,33,56,.08)}
-.section{padding:28px 0}
-.section-head{margin-bottom:18px}
-.kicker{color:var(--accent);font-weight:700}
-.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-.product{background:var(--panel);padding:12px;border-radius:10px;box-shadow:0 6px 18px rgba(11,33,56,.04);text-align:center}
-.product img{width:100%;height:140px;object-fit:cover;border-radius:8px}
-.notice{color:var(--muted);font-size:13px;margin-top:12px}
-.section-alt{background:#f1f7ff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.contact-card{background:var(--panel);padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(11,33,56,.04)}
-.contact-item{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px}
-.contact-icon{font-size:20px}
-.mapbox{background:linear-gradient(180deg,#eaf4ff,#fff);padding:12px;border-radius:10px;text-align:center}
-.footer{padding:18px 0;background:linear-gradient(180deg,#021322,#04203a);color:white}
-.footer-inner{display:flex;gap:12px;align-items:center;justify-content:space-between}
-.float-wa{position:fixed;right:16px;bottom:18px;background:#25d366;color:white;width:56px;height:56px;border-radius:999px;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:20px}
-@media(max-width:900px){.hero{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,minmax(0,1fr))}.navlinks{display:none}}
-@media(max-width:560px){.products{grid-template-columns:1fr}.footer-inner{flex-direction:column;gap:8px}}
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --gold: #ffdf65;
+  --pink: #ff4fa3;
+  --purple: #271044;
+  --dark: #10081d;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--dark);
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 22px 12px;
+  background: linear-gradient(120deg, #43116c, #9d176b, #e65b20);
+  border-bottom: 3px solid var(--gold);
+}
+
+header h1 {
+  color: var(--gold);
+  font-size: clamp(25px, 6vw, 40px);
+  margin: 8px 0;
+  text-shadow: 0 0 16px #ff8b00;
+  animation: glow 2s infinite alternate;
+}
+
+header p {
+  margin: 7px 0;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px #ff8b00; }
+  to { text-shadow: 0 0 22px #ffdf65; }
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 6px;
+  background: #1b0d2b;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid #673c8b;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  background: #54227d;
+  padding: 10px 13px;
+  border-radius: 22px;
+  font-size: 13px;
+}
+
+nav a:hover {
+  background: var(--pink);
+  color: #170820;
+}
+
+.hero {
+  text-align: center;
+  padding: 55px 15px;
+  background: linear-gradient(135deg, #4d167b, #c51b78, #f47a20);
+}
+
+.hero h2 {
+  color: #fff1a0;
+  font-size: clamp(29px, 7vw, 49px);
+  margin: 12px 0;
+  text-shadow: 0 0 15px #ffb900;
+}
+
+.hero p {
+  line-height: 1.8;
+}
+
+.hero-banner {
+  display: inline-block;
+  padding: 9px 15px;
+  border: 1px solid #ffe59b;
+  border-radius: 30px;
+  background: #ffffff20;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 17px;
+  margin: 6px 3px;
+  border-radius: 26px;
+  background: linear-gradient(90deg, #ffdf65, #ffad37);
+  color: #281039;
+  transition: transform .2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+section {
+  padding: 36px 14px;
+  max-width: 1150px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  color: var(--gold);
+  font-size: clamp(23px, 5vw, 31px);
+  margin-bottom: 24px;
+}
+
+.intro {
+  text-align: center;
+  line-height: 1.8;
+  color: #e8dcef;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background: linear-gradient(155deg, #2d1744, #1c102c);
+  border: 1px solid #724695;
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 15px;
+  transition: transform .25s, border-color .25s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--gold);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  background: white;
+  display: block;
+}
+
+.card h3 {
+  color: #ffe49b;
+  font-size: 17px;
+  margin: 13px 5px 8px;
+}
+
+.card p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #e0d5e8;
+  padding: 0 9px;
+}
+
+.small-btn {
+  display: inline-block;
+  padding: 9px 12px;
+  margin: 4px;
+  background: #ff4fa3;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 17px;
+}
+
+.offer-card {
+  text-align: center;
+  padding: 24px 14px;
+  border-radius: 19px;
+  background: linear-gradient(135deg, #7e145b, #e54e32);
+  border: 1px solid #ffbd70;
+  box-shadow: 0 5px 20px #0003;
+}
+
+.offer-card h3 {
+  color: #fff0a5;
+  font-size: 22px;
+}
+
+.offer-card .emoji {
+  font-size: 52px;
+}
+
+.offer-card p {
+  line-height: 1.7;
+}
+
+.shop-photo {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border: 2px solid var(--gold);
+  border-radius: 17px;
+  display: block;
+}
+
+.shop-placeholder {
+  padding: 30px 15px;
+  text-align: center;
+  background: #29163c;
+  border: 1px dashed #ffdf65;
+  border-radius: 15px;
+  line-height: 1.8;
+}
+
+.contact-box {
+  background: linear-gradient(145deg, #29153f, #441344);
+  border: 1px solid #744c8d;
+  border-radius: 18px;
+  padding: 24px 15px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.contact-box h3 {
+  color: var(--gold);
+  font-size: 23px;
+}
+
+.note {
+  font-size: 12px;
+  color: #d8c9e3;
+  line-height: 1.8;
+}
+
+footer {
+  text-align: center;
+  padding: 25px 12px;
+  background: #08050d;
+  border-top: 2px solid #6e358a;
+  color: #ddd;
+  line-height: 1.8;
+}
+
+footer strong {
+  color: var(--gold);
+}
+
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+  }
+
+  .card img {
+    height: 130px;
+  }
+
+  nav a {
+    padding: 9px 10px;
+  }
+}
 </style>
 </head>
+
 <body>
-<div class="topline"><div class="wrap">📍 Lateri, District Vidisha, Madhya Pradesh • Quality electronics & home appliances</div></div>
-<header class="navbar"><div class="wrap navinner">
-<a class="brand" href="#home"><div class="logo">RE</div><div><div style="font-weight:700">RIMJHIM ENTERPRISES</div><div style="font-size:12px;color:rgba(255,255,255,.85)">Smart choices. Happy homes.</div></div></a>
-<nav class="navlinks" aria-label="Main navigation"><a href="#home">Home</a><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
-<a class="navbtn" href="#products">Explore Deals</a>
-</div></header>
+
+<header>
+  <h1>✨ RIMJHIM ENTERPRISES ✨</h1>
+  <p>Electronics &amp; Home Appliances</p>
+  <p>👨‍💼 Owner: Mr. Pavan Sahu</p>
+  <p>📍 Main Market, Lateri, Vidisha, Madhya Pradesh</p>
+</header>
+
+<nav>
+  <a href="#home">🏠 Home</a>
+  <a href="#products">🛍️ Products</a>
+  <a href="#offers">🎉 Offers</a>
+  <a href="#shop">🏪 Our Shop</a>
+  <a href="#contact">📞 Contact</a>
+</nav>
+
 <main>
-<section class="hero wrap" id="home">
-<div>
-<span class="eyebrow">🎉 FESTIVE SHOPPING • LATERI</span>
-<h1>Upgrade your home with reliable electronics</h1>
-<p>Visit Rimjhim Enterprises in Lateri, Vidisha for mobiles, TVs, refrigerators, washing machines, air conditioners and audio products. Contact us to check availability or to request product photos.</p>
-<div style="margin-top:14px"><a class="btn btn-primary" href="#products">Browse products</a><a class="btn btn-outline" href="#contact">Find our shop</a></div>
-</div>
-<div class="hero-photo"><img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1200&q=85" alt="Store products and home appliances"></div>
+
+<section class="hero" id="home">
+  <div class="hero-banner">WELCOME TO OUR ELECTRONICS STORE</div>
+
+  <h2>🎆 DIWALI DHAMAKA 🎆</h2>
+
+  <h3>Rimjhim Enterprises</h3>
+
+  <p>
+    Your trusted local destination for electronics,
+    mobile accessories and home appliances.
+  </p>
+
+  <p>
+    📱 Mobiles &nbsp; • &nbsp; ❄️ Fridge &nbsp; • &nbsp;
+    📺 TV &nbsp; • &nbsp; 🎧 Earbuds
+  </p>
+
+  <a class="btn" href="#products">🛍️ Explore Products</a>
+  <a class="btn" href="#offers">🎁 Special Offers</a>
 </section>
 
-<section class="section wrap" id="products">
-<div class="section-head"><span class="kicker">Shop by category</span><h2>Find your next favourite</h2><p class="notice">Product photos are illustrative. Confirm model, stock and price with the shop.</p></div>
-<div class="products" id="productGrid">
-<div class="product" data-category="mobile"><img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80" alt="Mobiles"><h3>Mobile Phones</h3></div>
-<div class="product" data-category="audio"><img src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=800&q=80" alt="Earbuds"><h3>Earphones</h3></div>
-<div class="product" data-category="audio"><img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=800&q=80" alt="Speakers"><h3>Speakers</h3></div>
-<div class="product" data-category="tv"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=800&q=80" alt="TV"><h3>Televisions</h3></div>
-<div class="product" data-category="cooling"><img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?auto=format&fit=crop&w=800&q=80" alt="Fridge"><h3>Refrigerators</h3></div>
-<div class="product" data-category="cooling"><img src="https://images.unsplash.com/photo-1631545806609-4b6c9f6a3c6b?auto=format&fit=crop&w=800&q=80" alt="AC"><h3>Air Conditioners</h3></div>
-<div class="product" data-category="laundry"><img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=800&q=80" alt="Washing Machine"><h3>Washing Machines</h3></div>
-</div>
+<section id="products">
+  <h2 class="section-title">🛍️ OUR PRODUCTS</h2>
+
+  <p class="intro">
+    Explore electronics, mobile accessories and
+    appliances for your home.
+  </p>
+
+  <div class="grid">
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+           alt="Mobile phone" loading="lazy">
+      <h3>📱 Mobile Phones</h3>
+      <p>Explore smartphones and mobile devices.</p>
+      <a class="small-btn" href="#contact">Enquire Now</a>
+    </article>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+           alt="Refrigerator" loading="lazy">
+      <h3>❄️ Refrigerators</h3>
+      <p>Refrigerators for everyday home needs.</p>
+      <a class="small-btn" href="#contact">Enquire Now</a>
+    </article>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+           alt="Washing machine" loading="lazy">
+      <h3>🧺 Washing Machines</h3>
+      <p>Explore laundry appliances.</p>
+      <a class="small-btn" href="#contact">Enquire Now</a>
+    </article>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+           alt="Wireless earbuds" loading="lazy">
+      <h3>🎧 Earbuds</h3>
+      <p>Wireless audio accessories.</p>
+      <a class="small-btn" href="#offers">See Offers</a>
+    </article>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+           alt="Speakers" loading="lazy">
+      <h3>🔊 Home Theatre</h3>
+      <p>Speakers and home audio systems.</p>
+      <a class="small-btn" href="#contact">Enquire Now</a>
+    </article>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+           alt="LED television" loading="lazy">
+      <h3>📺 LED TV</h3>
+      <p>Televisions for your home.</p>
+      <a class="small-btn" href="#contact">Enquire Now</a>
+    </article>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1631545806609-7c3a8e8a2a2d?auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+           alt="Air conditioner" loading="lazy">
+      <h3>🌬️ Air Conditioners</h3>
+      <p>Explore home cooling appliances.</p>
+      <a class="small-btn" href="#contact">Enquire Now</a>
+    </article>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+           alt="Headphones and audio accessories" loading="lazy">
+      <h3>🎵 Accessories</h3>
+      <p>Audio and mobile accessories.</p>
+      <a class="small-btn" href="#contact">Enquire Now</a>
+    </article>
+
+  </div>
+
+  <p class="note">
+    Note: Online product images are illustrative examples.
+    Please confirm actual models, availability and prices
+    with the shop.
+  </p>
 </section>
 
-<section class="section section-alt wrap" id="about">
-<div class="section-head"><span class="kicker">About</span><h2>Friendly local electronics store in Lateri</h2><p>Rimjhim Enterprises has a wide selection of everyday electronics and reliable after-sales support. We focus on helping customers pick the right product for their needs.</p></div>
+<section id="offers">
+  <h2 class="section-title">🎉 SPECIAL OFFERS 🎉</h2>
+
+  <p class="intro">
+    Visit Rimjhim Enterprises, Main Market, Lateri,
+    and ask about available offers.
+  </p>
+
+  <div class="offer-grid">
+
+    <div class="offer-card">
+      <div class="emoji">🎧</div>
+      <h3>Earbuds Offer</h3>
+      <p>
+        Explore wireless earbuds and audio accessories.
+        Ask us about current offers and available models.
+      </p>
+      <a class="btn"
+         href="https://wa.me/917566167236?text=Hello%20Rimjhim%20Enterprises%2C%20please%20tell%20me%20about%20earbuds%20offers."
+         target="_blank" rel="noopener">
+        Ask on WhatsApp
+      </a>
+    </div>
+
+    <div class="offer-card">
+      <div class="emoji">🎮</div>
+      <h3>Free Fire Thumb Cover</h3>
+      <p>
+        Gaming finger sleeves for mobile gaming.
+        Ask about available designs and current prices.
+      </p>
+      <a class="btn"
+         href="https://wa.me/917566167236?text=Hello%20Rimjhim%20Enterprises%2C%20please%20tell%20me%20about%20Free%20Fire%20thumb%20covers."
+         target="_blank" rel="noopener">
+        Ask on WhatsApp
+      </a>
+    </div>
+
+    <div class="offer-card">
+      <div class="emoji">📱</div>
+      <h3>Mobile Accessories</h3>
+      <p>
+        Ask about available accessories and
+        special deals at our shop.
+      </p>
+      <a class="btn" href="#contact">Contact Shop</a>
+    </div>
+
+  </div>
+
+  <p class="note">
+    Offers, prices and stock are subject to confirmation
+    by the shop. No fixed discount is advertised here.
+  </p>
 </section>
 
-<section class="section wrap" id="contact">
-<div class="section-head"><span class="kicker">Get in touch</span><h2>Visit our shop</h2><p class="notice">Need a specific model? Send an enquiry or visit the shop in Lateri to see products in person.</p></div>
-<div style="display:grid;grid-template-columns:1fr 320px;gap:16px;align-items:start">
-<div>
-<div class="contact-card">
-<h3>📍 Shop Information</h3>
-<div class="contact-item"><div class="contact-icon">🏬</div><div><strong>Rimjhim Enterprises</strong><div style="font-size:13px;color:var(--muted)">Electronics & Home Appliances</div></div></div>
-<div class="contact-item"><div class="contact-icon">📍</div><div><div style="font-weight:700">Lateri, District Vidisha</div><div style="font-size:13px;color:var(--muted)">Madhya Pradesh, India</div></div></div>
-<div class="contact-item"><div class="contact-icon">📸</div><div><div style="font-weight:700">Instagram</div><div style="font-size:13px;color:var(--muted)">Rimjhim mobile lateri</div></div></div>
-<div class="contact-item"><div class="contact-icon">⏰</div><div><div style="font-weight:700">Opening hours</div><div style="font-size:13px;color:var(--muted)">Placeholder — please provide opening hours</div></div></div>
-<div style="margin-top:10px"><a class="btn btn-primary" href="#contact">Enquire about a product</a> <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=Rimjhim+Enterprises+Lateri+Vidisha" target="_blank">Find on map</a></div>
-</div>
-</div>
-<div>
-<div class="mapbox">
-<div style="font-size:28px">📍</div>
-<h3>Rimjhim Enterprises</h3>
-<p style="color:var(--muted)">Lateri, District Vidisha, Madhya Pradesh</p>
-<a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=Rimjhim+Enterprises+Lateri+Vidisha" target="_blank">Open Google Maps</a>
-</div>
-</div>
-</div>
+<section id="shop">
+  <h2 class="section-title">🏪 OUR REAL SHOP</h2>
+
+  <img
+    class="shop-photo"
+    id="real-shop-photo"
+    src="shop.jpg"
+    alt="Rimjhim Enterprises real shop, Main Market Lateri"
+    loading="lazy"
+    onerror="this.style.display='none';document.getElementById('shop-placeholder').style.display='block';">
+
+  <div class="shop-placeholder" id="shop-placeholder"
+       style="display:none">
+    <h3>📸 Add Your Real Shop Photo</h3>
+    <p>
+      Upload your original shop photo to the same GitHub
+      folder as index.html and name it
+      <strong>shop.jpg</strong>.
+    </p>
+  </div>
+
+  <p class="intro">
+    Visit us at Main Market, Lateri, Vidisha,
+    Madhya Pradesh.
+  </p>
 </section>
 
-<footer class="footer">
-<div class="wrap footer-inner">
-<div>
-<strong>RIMJHIM ENTERPRISES</strong><br><small style="color:rgba(255,255,255,.85)">Smart choices. Happy homes.</small>
-</div>
-<div style="color:rgba(255,255,255,.9)">Lateri, Vidisha, Madhya Pradesh</div>
-<div style="text-align:right">
-<div style="font-size:13px">Instagram: Rimjhim mobile lateri</div>
-<div style="font-size:12px;color:rgba(255,255,255,.7);margin-top:6px">© <span id="year"></span> Rimjhim Enterprises</div>
-</div>
-</div>
+<section id="contact">
+  <h2 class="section-title">📍 CONTACT &amp; VISIT US</h2>
+
+  <div class="contact-box">
+    <h3>Rimjhim Enterprises</h3>
+
+    <p>👨‍💼 Shop Owner: Mr. Pavan Sahu</p>
+    <p>📍 Main Market, Lateri, Vidisha, Madhya Pradesh</p>
+    <p>📞 Mobile: 7566167236</p>
+
+    <a class="btn" href="tel:+917566167236">
+      📞 Call Now
+    </a>
+
+    <a class="btn"
+       href="https://wa.me/917566167236?text=Hello%20Rimjhim%20Enterprises%2C%20I%20want%20to%20know%20about%20your%20products."
+       target="_blank" rel="noopener">
+      💬 WhatsApp Us
+    </a>
+
+    <br>
+
+    <a class="btn"
+       href="https://www.google.com/maps/search/?api=1&amp;query=Rimjhim+Enterprises+Main+Market+Lateri+Vidisha+Madhya+Pradesh"
+       target="_blank" rel="noopener">
+      🗺️ Find Us on Google Maps
+    </a>
+
+    <p>
+      <a style="color:#ffe39a"
+         href="https://www.google.com/search?q=Rimjhim+Enterprises+Lateri+reviews"
+         target="_blank" rel="noopener">
+        ⭐ Find Customer Reviews on Google
+      </a>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <strong>✨ RIMJHIM ENTERPRISES ✨</strong>
+  <p>Owned by Mr. Pavan Sahu</p>
+  <p>Main Market, Lateri, Vidisha, Madhya Pradesh</p>
+  <p>📞 7566167236</p>
+  <p>Thank You for Visiting ❤️ Visit Again!</p>
+  <p class="note">© 2026 Rimjhim Enterprises</p>
 </footer>
 
-<a class="float-wa" href="#contact" aria-label="Go to contact" title="Contact the shop">✉</a>
-
-<script>
-document.getElementById('year').textContent=new Date().getFullYear();
-</script>
 </body>
 </html>
